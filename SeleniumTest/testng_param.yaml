@@ -1,0 +1,8 @@
+name: Suite
+configFailurePolicy: skip
+parameters: { URL: This is a test }
+tests:
+  - name: Test
+  classes:
+    - testng.test3
+

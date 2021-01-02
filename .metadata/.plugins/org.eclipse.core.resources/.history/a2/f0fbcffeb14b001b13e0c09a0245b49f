@@ -1,0 +1,32 @@
+package testng;
+
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+public class test {
+
+	@Test
+	public void testPrint() {
+		System.out.println("TEST TESTNG");
+	}
+
+	@Test
+	public void Pass() {
+		System.out.println("Pass");
+
+	}
+
+	@BeforeMethod
+	public static void Bmethod() {
+		System.out.println("METHOD START");
+
+	}
+
+	@AfterMethod
+	public static void Amethod() {
+		System.out.println("METHOD END");
+
+	}
+
+}

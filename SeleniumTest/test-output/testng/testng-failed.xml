@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [testng]" parallel="none">
+  <listeners>
+    <listener class-name="testng.Listners"/>
+  </listeners>
+  <test name="stuff(failed)" parallel="none">
+    <classes>
+      <class name="testng.test2">
+        <methods>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- testng.test2 -->
+      <class name="testng.test">
+        <methods>
+          <include name="Atest"/>
+          <include name="Atest"/>
+          <include name="Btest"/>
+          <include name="Btest"/>
+          <include name="Bmethod"/>
+          <include name="Bmethod"/>
+          <include name="Amethod"/>
+          <include name="Amethod"/>
+          <include name="Bclass"/>
+          <include name="Bclass"/>
+        </methods>
+      </class> <!-- testng.test -->
+    </classes>
+  </test> <!-- stuff(failed) -->
+  <test name="MoreStuff(failed)" parallel="none">
+    <classes>
+      <class name="testng.test2">
+        <methods>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- testng.test2 -->
+      <class name="testng.test">
+        <methods>
+          <include name="Atest"/>
+          <include name="Atest"/>
+          <include name="Btest"/>
+          <include name="Btest"/>
+          <include name="Bmethod"/>
+          <include name="Bmethod"/>
+          <include name="Amethod"/>
+          <include name="Amethod"/>
+          <include name="Bclass"/>
+          <include name="Bclass"/>
+        </methods>
+      </class> <!-- testng.test -->
+    </classes>
+  </test> <!-- MoreStuff(failed) -->
+</suite> <!-- Failed suite [testng] -->
