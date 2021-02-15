@@ -6,6 +6,8 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/D:/Selenium_Frameworks"/>
+			<item value="/home/demonslayer/Desktop/GIT_REPOs/Selenium_Stuff/SeleniumStuff"/>
 			<item value="D:\sonata-test\test\MAIN\Utility\TESTCOMPLETE_SESSION_DISCONNECT\Selenium_Project"/>
 			<item value="D:\Selenium_Frameworks"/>
 		</list>
@@ -31,10 +33,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="Academy.E2EProject"/>
 		</list>
 		<list key="groupId">
+			<item value="Academy"/>
 		</list>
 		<list key="artifactId">
+			<item value="E2EProject"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -50,14 +55,10 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="tc"/>
-			<item value="com.test"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="01"/>
-			<item value="DataDrivenFramework"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
