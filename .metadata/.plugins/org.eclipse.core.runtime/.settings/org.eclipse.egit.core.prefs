@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 GitRepositoriesView.GitDirectories=D\:\\sonata-test\\.git;D\:\\Eclipse_Workspace\\.git;
 GitRepositoriesView.GitDirectories.relative=D\:\\sonata-test\\.git;.git;
+=======
+GitRepositoriesView.GitDirectories=/home/demonslayer/Desktop/GIT_REPOs/Selenium_Stuff/SeleniumStuff/.git\:/home/demonslayer/Desktop/GIT_REPOs/Selenium_Stuff/SeleniumStuff/D\:/home/demonslayer/Desktop/GIT_REPOs/Selenium_Stuff/SeleniumStuff/\\sonata-test\\.git;\:
+GitRepositoriesView.GitDirectories.relative=.git\:D\:\\sonata-test\\.git;\:
+>>>>>>> 04bf3e553d2d2c8e999326cb2c71c1f07fb52071
 eclipse.preferences.version=1

@@ -4,6 +4,7 @@
 		<item key="width" value="600"/>
 		<item key="height" value="400"/>
 	</section>
+<<<<<<< HEAD
 	<section name="RefactoringWizard.Convert from JUnit">
 		<item key="width" value="600"/>
 		<item key="height" value="479"/>
@@ -16,5 +17,15 @@
 		<item key="DIALOG_WIDTH" value="816"/>
 		<item key="DIALOG_HEIGHT" value="490"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+=======
+	<section name="RefactoringStatusDialog">
+		<item key="DIALOG_WIDTH" value="806"/>
+		<item key="DIALOG_HEIGHT" value="491"/>
+		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
+	</section>
+	<section name="InferTypeArguments">
+		<item key="assumeCloneReturnsSameType" value="true"/>
+		<item key="leaveUnconstrainedRaw" value="true"/>
+>>>>>>> 04bf3e553d2d2c8e999326cb2c71c1f07fb52071
 	</section>
 </section>

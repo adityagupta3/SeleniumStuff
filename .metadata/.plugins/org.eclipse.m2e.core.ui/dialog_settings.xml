@@ -6,9 +6,14 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+<<<<<<< HEAD
 			<item value="D:\Eclipse_Workspace\REST_Serialization"/>
 			<item value="D:\Eclipse_Workspace\ExtentReports"/>
 			<item value="D:\Eclipse_Workspace\SeleniumTest"/>
+=======
+			<item value="/D:/Selenium_Frameworks"/>
+			<item value="/home/demonslayer/Desktop/GIT_REPOs/Selenium_Stuff/SeleniumStuff"/>
+>>>>>>> 04bf3e553d2d2c8e999326cb2c71c1f07fb52071
 			<item value="D:\sonata-test\test\MAIN\Utility\TESTCOMPLETE_SESSION_DISCONNECT\Selenium_Project"/>
 			<item value="D:\Selenium_Frameworks"/>
 		</list>
@@ -34,6 +39,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+<<<<<<< HEAD
 			<item value="Cucumber.BDD"/>
 		</list>
 		<list key="groupId">
@@ -41,6 +47,15 @@
 		</list>
 		<list key="artifactId">
 			<item value="BDD"/>
+=======
+			<item value="Academy.E2EProject"/>
+		</list>
+		<list key="groupId">
+			<item value="Academy"/>
+		</list>
+		<list key="artifactId">
+			<item value="E2EProject"/>
+>>>>>>> 04bf3e553d2d2c8e999326cb2c71c1f07fb52071
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
