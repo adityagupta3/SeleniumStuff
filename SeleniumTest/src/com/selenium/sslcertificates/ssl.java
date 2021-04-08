@@ -15,19 +15,22 @@ public class ssl {
 	public static void main(String[] args) {
 		
 		System.setProperty("webdriver.chrome.driver", "D:\\Sel\\chromedriver.exe");
-		DesiredCapabilities cap = new DesiredCapabilities();
+		DesiredCapabilities capabilities = new DesiredCapabilities();
 		// The below commands are just different ways of doing the same thing
-		cap.acceptInsecureCerts();
-		cap.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
+		capabilities.acceptInsecureCerts();
+		capabilities.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
 		
 		ChromeOptions ch = new ChromeOptions();
-		ch.merge(cap);
+		ch.merge(capabilities);
 
 		WebDriver driver = new ChromeDriver(ch);
 		
 		driver.get("http://www.google.com");
 		
+		
+		
 		File sc = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copy(sc,new File("C://screenshot.png") );
 	}
 }
+

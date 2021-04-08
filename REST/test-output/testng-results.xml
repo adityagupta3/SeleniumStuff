@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="13049" started-at="2021-03-14T18:39:38 IST" finished-at="2021-03-14T18:39:51 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="13049" started-at="2021-03-14T18:39:38 IST" finished-at="2021-03-14T18:39:51 IST">
+      <class name="Book.bookfunc">
+        <test-method status="PASS" signature="addBook(java.lang.String, int)[pri:0, instance:Book.bookfunc@6895a785]" name="addBook" duration-ms="12071" started-at="2021-03-14T18:39:38 IST" data-provider="AddBooks" finished-at="2021-03-14T18:39:50 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[aaa]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1231231232]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBook -->
+        <test-method status="PASS" signature="addBook(java.lang.String, int)[pri:0, instance:Book.bookfunc@6895a785]" name="addBook" duration-ms="843" started-at="2021-03-14T18:39:50 IST" data-provider="AddBooks" finished-at="2021-03-14T18:39:51 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ascafvsc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[13235346]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBook -->
+      </class> <!-- Book.bookfunc -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,59 +1,71 @@
 package search;
 
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
 
 public class search {
 
+
 	
-	public static void main(String[] args) {
-
+	
+	
+	@Test
+	public void google() {
 		System.setProperty("webdriver.chrome.driver", "D:\\Sel\\chromedriver.exe");
+		
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/offers");
-
-		WebElement search = driver.findElement(By.xpath("//input[@id='search-field']"));
-
-		String Search = "apple";
-		search.click();
-		search.sendKeys(Search);
-
-		List<WebElement> result = driver.findElements(By.xpath("//tbody/tr/td[1]"));
-		List<String> tableContents = result.stream().map(s -> getPrice(s, Search)).collect(Collectors.toList());
-		// tableContents.stream().filter(s -> s.equalsIgnoreCase(Search)).;
-
-		List<Integer> index = new ArrayList<Integer>();
-		tableContents.forEach(s -> {
-			if (s.equalsIgnoreCase("null")) {
-				 index.add(tableContents.indexOf(s));
-				 System.out.println(tableContents.indexOf(s));
-			}
-		});
 		
-		index.forEach(s->{
-			System.out.println(s);
-			tableContents.remove((int)s);
-		});
+		driver.get("https://www.google.com/");
 		
-		System.out.println(tableContents.toString());
-
-	}
-
-	public static String getPrice(WebElement s, String Search) {
-
-		if (s.getText().equalsIgnoreCase(Search)) {
-
-			return s.findElement(By.xpath("following-sibling::td[1]")).getText();
-
-		} else
-			return "NULL";
-
+		String search = "aditya";
+		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+		driver.findElement(By.xpath("//input[@name='q']")).sendKeys(search);
+		driver.findElement(By.xpath("//input[@name='q']")).sendKeys(Keys.TAB);
+		driver.findElement(By.xpath("//input[@name='q']")).sendKeys(Keys.TAB);
+		driver.findElement(By.xpath("//input[@name='q']")).sendKeys(Keys.TAB);
+		//driver.findElement(By.xpath("//input[@name='q']")).sendKeys(Keys.ENTER);
+		//WebDriverWait wait = new WebDriverWait(driver,10);
+		
+		//wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//input[@aria-label='Google Search']"))));
+		driver.findElements(By.xpath("//input[@aria-label='Google Search']")).get(1).click();
+		
+		driver.findElements(By.xpath("//a/h3")).get(5).click();  
+		
+		if(driver.getPageSource().contains(search)) {
+			assertTrue(true);
+		} else {
+			assertTrue(false);
+		}
+		
+		driver.quit();
+		
+		//driver.findElement(By.xpath("//a[5]")).click();
+		
+		
 	}
 
 }
+
+
+
+
+
+

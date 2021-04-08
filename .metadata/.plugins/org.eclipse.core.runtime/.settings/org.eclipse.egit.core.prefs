@@ -1,3 +1,3 @@
-GitRepositoriesView.GitDirectories=D\:\\sonata-test\\.git;
-GitRepositoriesView.GitDirectories.relative=D\:\\sonata-test\\.git;
+GitRepositoriesView.GitDirectories=D\:\\sonata-test\\.git;D\:\\Eclipse_Workspace\\.git;
+GitRepositoriesView.GitDirectories.relative=D\:\\sonata-test\\.git;.git;
 eclipse.preferences.version=1
